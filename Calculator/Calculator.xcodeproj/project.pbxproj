@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05293004268976AC008F519A /* CalculatorButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05293003268976AB008F519A /* CalculatorButtonItem.swift */; };
 		0538A32D267B7504000BF616 /* CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A32C267B7504000BF616 /* CalculatorApp.swift */; };
 		0538A32F267B7504000BF616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A32E267B7504000BF616 /* ContentView.swift */; };
 		0538A331267B7507000BF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0538A330267B7507000BF616 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05293003268976AB008F519A /* CalculatorButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonItem.swift; sourceTree = "<group>"; };
 		0538A329267B7504000BF616 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0538A32C267B7504000BF616 /* CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorApp.swift; sourceTree = "<group>"; };
 		0538A32E267B7504000BF616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				0538A32C267B7504000BF616 /* CalculatorApp.swift */,
 				0538A32E267B7504000BF616 /* ContentView.swift */,
+				05293003268976AB008F519A /* CalculatorButtonItem.swift */,
 				0538A330267B7507000BF616 /* Assets.xcassets */,
 				0538A335267B7507000BF616 /* Info.plist */,
 				0538A332267B7507000BF616 /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				0538A32F267B7504000BF616 /* ContentView.swift in Sources */,
 				0538A32D267B7504000BF616 /* CalculatorApp.swift in Sources */,
+				05293004268976AC008F519A /* CalculatorButtonItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
