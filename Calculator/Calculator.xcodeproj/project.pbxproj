@@ -14,6 +14,7 @@
 		0538A334267B7507000BF616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0538A333267B7507000BF616 /* Preview Assets.xcassets */; };
 		0538A33F267B7507000BF616 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A33E267B7507000BF616 /* CalculatorTests.swift */; };
 		0538A34A267B7507000BF616 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A349267B7507000BF616 /* CalculatorUITests.swift */; };
+		05B5D44E268B469700851BBB /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B5D44D268B469700851BBB /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0538A345267B7507000BF616 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0538A349267B7507000BF616 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		0538A34B267B7507000BF616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05B5D44D268B469700851BBB /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0538A330267B7507000BF616 /* Assets.xcassets */,
 				0538A335267B7507000BF616 /* Info.plist */,
 				0538A332267B7507000BF616 /* Preview Content */,
+				05B5D44D268B469700851BBB /* CalculatorBrain.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				0538A32F267B7504000BF616 /* ContentView.swift in Sources */,
 				0538A32D267B7504000BF616 /* CalculatorApp.swift in Sources */,
+				05B5D44E268B469700851BBB /* CalculatorBrain.swift in Sources */,
 				05293004268976AC008F519A /* CalculatorButtonItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

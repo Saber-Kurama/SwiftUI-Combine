@@ -18,12 +18,26 @@
 import SwiftUI
 import Foundation
 
-struct ContentView: View {
 
+
+struct ContentView: View {
+//    @state private var brain: CalculatorBrain = .left("0")
+    @State private var text: String = "saber";
+    @State var num = 0
+    var num1 = 0
+    
+    mutating func setNum1(val: Int) {
+        num1 = val
+    }
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text("0asddddddddddddddddddddddasdasdasdasdasdaasdasdasdasdasdasdasdasdasdasdasdasd").font(.system(size: 76))
+            Button("Sign In", action: {
+//                self.num1 = 2;
+                self.num += 1
+                self.text = "测试" + String(self.num)
+            })
+            Text(text).font(.system(size: 76))
                 .minimumScaleFactor(0.5)
                 .padding(.trailing, 24)
                 .lineLimit(1)
