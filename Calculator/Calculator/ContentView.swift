@@ -17,11 +17,12 @@
 
 import SwiftUI
 import Foundation
-
-
+import Combine
 
 struct ContentView: View {
-    @State private var brain: CalculatorBrain = .left("0")
+//    @State private var brain: CalculatorBrain = .left("0")
+    @ObservedObject private var model = CalculatorModel()
+    
     @State var num = 0
     var num1 = 0
     
@@ -31,17 +32,17 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Button("Sign In", action: {
-//                self.num1 = 2;
-                self.num += 1
-//                self.text = "测试" + String(self.num)
-            })
-            Text(brain.output).font(.system(size: 76))
+//            Button("Sign In", action: {
+////                self.num1 = 2;
+//                self.num += 1
+////                self.text = "测试" + String(self.num)
+//            })
+            Text(model.brain.output).font(.system(size: 76))
                 .minimumScaleFactor(0.5)
                 .padding(.trailing, 24)
                 .lineLimit(1)
                 .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-            CalculatorButtonPad(brain: self.$brain)
+            CalculatorButtonPad(brain: self.$model.brain)
         }
         
     }

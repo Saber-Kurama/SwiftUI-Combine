@@ -15,6 +15,7 @@
 		0538A33F267B7507000BF616 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A33E267B7507000BF616 /* CalculatorTests.swift */; };
 		0538A34A267B7507000BF616 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0538A349267B7507000BF616 /* CalculatorUITests.swift */; };
 		05B5D44E268B469700851BBB /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B5D44D268B469700851BBB /* CalculatorBrain.swift */; };
+		05B5D450268DEEB200851BBB /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B5D44F268DEEB200851BBB /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0538A349267B7507000BF616 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		0538A34B267B7507000BF616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05B5D44D268B469700851BBB /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		05B5D44F268DEEB200851BBB /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		0538A32B267B7504000BF616 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				05B5D44F268DEEB200851BBB /* CalculatorModel.swift */,
 				0538A32C267B7504000BF616 /* CalculatorApp.swift */,
 				0538A32E267B7504000BF616 /* ContentView.swift */,
 				05293003268976AB008F519A /* CalculatorButtonItem.swift */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0538A32F267B7504000BF616 /* ContentView.swift in Sources */,
+				05B5D450268DEEB200851BBB /* CalculatorModel.swift in Sources */,
 				0538A32D267B7504000BF616 /* CalculatorApp.swift in Sources */,
 				05B5D44E268B469700851BBB /* CalculatorBrain.swift in Sources */,
 				05293004268976AC008F519A /* CalculatorButtonItem.swift in Sources */,
