@@ -105,6 +105,7 @@ struct CalculatorButtonPad: View {
     ]
     var body: some View {
         VStack(spacing: 8) {
+//            Text(brain.output)
             ForEach(pad, id: \.self) {
 //                row in
 //                CalculatorButtonRow( row: row)
