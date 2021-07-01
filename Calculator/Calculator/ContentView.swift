@@ -21,8 +21,7 @@ import Foundation
 
 
 struct ContentView: View {
-//    @state private var brain: CalculatorBrain = .left("0")
-    @State private var text: String = "saber";
+    @State private var brain: CalculatorBrain = .left("0")
     @State var num = 0
     var num1 = 0
     
@@ -35,14 +34,14 @@ struct ContentView: View {
             Button("Sign In", action: {
 //                self.num1 = 2;
                 self.num += 1
-                self.text = "测试" + String(self.num)
+//                self.text = "测试" + String(self.num)
             })
-            Text(text).font(.system(size: 76))
+            Text(brain.output).font(.system(size: 76))
                 .minimumScaleFactor(0.5)
                 .padding(.trailing, 24)
                 .lineLimit(1)
                 .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .trailing)
-            CalculatorButtonPad()
+            CalculatorButtonPad(brain: self.$brain)
         }
         
     }
@@ -62,7 +61,7 @@ struct CalculatorButton: View {
     let size: CGSize
     let backgroundColorName: String
     let fontColor: Color
-    let action: () -> Void = {}
+    let action: () -> Void
 //    init() {}
 //
 //    init(title: String) {
@@ -81,17 +80,23 @@ struct CalculatorButton: View {
 }
 
 struct CalculatorButtonRow: View {
+    @Binding var brain: CalculatorBrain
     let row: [CalculatorButtonItem]
     var body: some View {
         HStack{
             ForEach(row, id: \.self) { item in
-                CalculatorButton(title: item.title, size: item.size, backgroundColorName: item.backgroundColorName, fontColor: item.fontColor)
+                CalculatorButton(title: item.title, size: item.size, backgroundColorName: item.backgroundColorName, fontColor: item.fontColor){
+                    self.brain = self.brain.apply(item: item)
+                }
             }
         }
     }
 }
 
 struct CalculatorButtonPad: View {
+    
+    @Binding var brain: CalculatorBrain
+    
     let pad: [[CalculatorButtonItem]] = [
         [.command(.clear), .command(.flip), .command(.percent), .op(.divide)],
         [.digit(7), .digit(8), .digit(9), .op(.multiply)],
@@ -103,7 +108,7 @@ struct CalculatorButtonPad: View {
             ForEach(pad, id: \.self) {
 //                row in
 //                CalculatorButtonRow( row: row)
-                CalculatorButtonRow( row: $0)
+                CalculatorButtonRow( brain: self.$brain,row: $0)
             }
         }
     }

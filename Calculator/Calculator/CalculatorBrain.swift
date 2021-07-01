@@ -24,9 +24,12 @@ var formatter: NumberFormatter  = {
 
 extension CalculatorBrain {
     var output: String {
-        return "saber"
-//        let result: String;
-//        switch
+        let result: String;
+        switch self {
+        case .left(let left): result = left
+        default: result = "saber"
+        }
+        return result
     }
     
     func apply(item: CalculatorButtonItem) -> CalculatorBrain {
@@ -34,12 +37,3 @@ extension CalculatorBrain {
     }
 }
 
-struct viewSaber {
-    var num = 0
-    init(num1: Int) {
-        num = num1
-    }
-    mutating func setNum(num1: Int) {
-        num = num1
-    }
-}

@@ -30,10 +30,6 @@ enum CalculatorButtonItem {
 }
 
 
-enum Saber:String {
-    case name = "name"
-}
-
 extension CalculatorButtonItem {
     var title: String {
         switch self {
